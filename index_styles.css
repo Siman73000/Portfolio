@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url('resources/CSP+Image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    background-color: rgb(49, 49, 49);
+    padding: 70px 20px 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+}
+
+.left-content {
+    color: white;
+    font-size: 35px;
+    background-color: rgb(49, 49, 49);
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.right-content {
+    color: white;
+    font-size: 22px;
+    background-color: rgb(49, 49, 49);
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left-content p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav ul li a:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.centered-text h2 {
+    font-size: 65px;
+}
+
+.centered-text p {
+    font-size: 25px;
+}
